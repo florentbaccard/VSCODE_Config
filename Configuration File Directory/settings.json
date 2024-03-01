@@ -1,0 +1,105 @@
+{
+    // Paramètres de l'interface utilisateur
+    "window.zoomLevel": 0, // Niveau de zoom de la fenêtre
+  
+    // Paramètres de l'éditeur de code
+    "editor.minimap.enabled": false, // Désactive la minimap
+    "editor.formatOnSave": false, // Désactive le formatage à la sauvegarde
+    "editor.formatOnPaste": false, // Désactive le formatage au collage
+    "editor.renderWhitespace": "trailing", // Affiche uniquement les espaces de fin
+    "editor.linkedEditing": true, // Active l'édition liée
+    "editor.suggest.insertMode": "replace", // Mode d'insertion des suggestions
+    "editor.acceptSuggestionOnCommitCharacter": false, // Désactive l'acceptation automatique des suggestions
+    "editor.guides.bracketPairs": true, // Affiche les paires de parenthèses lors de la saisie
+  
+    // Paramètres de sécurité
+    "security.workspace.trust.untrustedFiles": "open", // Permet l'ouverture des fichiers non fiables
+  
+    // Paramètres de gestion des fichiers
+    "files.autoSave": "onFocusChange", // Enregistre automatiquement les fichiers lors du changement de focus
+    "files.defaultLanguage": "php", // Langage par défaut pour les nouveaux fichiers
+  
+    // Paramètres de l'explorateur de fichiers
+    "explorer.autoReveal": false, // Désactive le défilement automatique dans l'explorateur de fichiers
+    "explorer.confirmDragAndDrop": false, // Désactive la confirmation du glisser-déposer
+    "explorer.confirmDelete": false, // Désactive la confirmation de suppression
+  
+    // Paramètres de l'arborescence de travail
+    "workbench.tree.indent": 15, // Indentation des éléments de l'arborescence
+    "workbench.tree.renderIndentGuides": "always", // Affiche toujours les guides d'indentation
+    "workbench.editor.enablePreview": false, // Désactive l'aperçu des fichiers lors de leur ouverture
+  
+    // Paramètres de l'extension Emmet
+    "emmet.triggerExpansionOnTab": true, // Active l'expansion sur tabulation pour Emmet
+  
+    // Paramètres de l'extension Git
+    "git.confirmSync": false, // Désactive la confirmation de synchronisation
+    "git.enableSmartCommit": true, // Active les commits intelligents
+  
+    // Paramètres de thème
+    "workbench.colorTheme": "Dracula", // Thème de couleur
+    "workbench.iconTheme": "material-icon-theme", // Thème d'icônes
+    "workbench.colorCustomizations": {
+      // Personnalisation des couleurs
+      "[Dracula]": {
+        "editor.selectionBackground": "#3d5ba5", // Couleur de fond de la sélection
+        "editor.selectionHighlightBackground": "#3d5ba5" // Couleur de fond de la mise en surbrillance de la sélection
+      }
+    },
+  
+    // Paramètres de police et de texte
+    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace", // Police de texte
+    "editor.fontLigatures": true, // Active les ligatures de police
+    "editor.lineHeight": 28, // Hauteur de ligne
+    "editor.fontSize": 16, // Taille de police
+  
+    // Paramètres de l'extension GitLens
+    "gitlens.currentLine.enabled": false, // Désactive les fonctionnalités de GitLens pour la ligne actuelle
+    "gitlens.codeLens.enabled": false, // Désactive les fonctionnalités de GitLens pour le code
+  
+    // Paramètres supplémentaires
+    "multiCommand.commands": [
+      // Commandes multiples
+      {
+        "command": "multiCommand.MakeRoom", // Commande pour créer de l'espace
+        "sequence": [
+          "workbench.action.toggleSideBarVisibility", // Bascule la visibilité de la barre latérale
+          "workbench.action.toggActivityBarVisibility" // Bascule la visibilité de la barre d'activité
+        ]
+      }
+    ],
+  
+    // Paramètres spécifiques aux langages
+    "javascript.preferences.importModuleSpecifierEnding": "js", // Paramètre spécifique à JavaScript
+    "typescript.preferences.importModuleSpecifierEnding": "js", // Paramètre spécifique à TypeScript
+  
+    // Paramètres de formatage par défaut pour différents langages
+    "[php]": {
+      "editor.defaultFormatter": "DEVSENSE.phptools-vscode" // Formatter par défaut pour PHP
+    },
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode" // Formatter par défaut pour HTML
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode" // Formatter par défaut pour JavaScript
+    },
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode" // Formatter par défaut pour JavaScript React
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode" // Formatter par défaut pour TypeScript
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode" // Formatter par défaut pour JSON
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode" // Formatter par défaut pour JSON avec commentaires
+    },
+  
+    // Paramètres de l'extension Live Server
+    "liveServer.settings.donotShowInfoMsg": true, // Masque les messages d'information de Live Server
+  
+    // Paramètres de l'extension Prettier
+    "tabnine.experimentalAutoImports": true // Importations automatiques expérimentales avec Tabnine
+  }
+  

@@ -1,0 +1,81 @@
+[
+    // Etend la sélection
+    {
+      "key": "ctrl+d",
+      "command": "editor.action.smartSelect.expand", // Commande pour étendre la sélection
+      "when": "editorTextFocus" // Condition : l'éditeur de texte doit avoir le focus
+    },
+    // Trouve toutes les occurences du mot sélectionné
+    {
+      "key": "shift+ctrl+d",
+      "command": "editor.action.selectHighlights", // Commande pour sélectionner toutes les occurrences
+      "when": "editorFocus" // Condition : l'éditeur doit avoir le focus
+    },
+    // Ouvre un fichier
+    {
+      "key": "ctrl+o",
+      "command": "workbench.action.quickOpen" // Commande pour ouvrir rapidement un fichier
+    },
+    // Crée un nouveau fichier
+    {
+      "key": "ctrl+n",
+      "command": "explorer.newFile" // Commande pour créer un nouveau fichier dans l'explorateur
+    },
+    // Commandes
+    {
+      "key": "ctrl+p",
+      "command": "workbench.action.showCommands" // Commande pour afficher la liste des commandes disponibles
+    },
+    // Masque / Affiche l'explorateur de fichier
+    {
+      "key": "alt+1",
+      "command": "workbench.view.explorer" // Commande pour afficher l'explorateur de fichiers
+    },
+    {
+      "key": "alt+1",
+      "command": "workbench.action.toggleSidebarVisibility", // Commande pour masquer/afficher la barre latérale
+      "when": "explorerViewletVisible" // Condition : le volet de l'explorateur doit être visible
+    },
+    // Masque / Affiche la vue git
+    {
+      "key": "ctrl+k",
+      "command": "workbench.view.scm" // Commande pour afficher la vue SCM (Système de Contrôle de Version)
+    },
+    {
+      "key": "ctrl+k",
+      "command": "workbench.action.toggleSidebarVisibility", // Commande pour masquer/afficher la barre latérale
+      "when": "view.workbench.scm.visible" // Condition : la vue SCM doit être visible
+    },
+    {
+      "key": "ctrl+k",
+      "command": "-workbench.action.terminal.clear", // Commande pour effacer le terminal
+      "when": "terminalFocus" // Condition : le terminal doit avoir le focus
+    },
+    // Masque / Affiche le terminal
+    {
+      "key": "ctrl+t",
+      "command": "workbench.action.terminal.toggleTerminal" // Commande pour masquer/afficher le terminal
+    },
+    // Nettoie le terminal
+    {
+      "key": "ctrl+l",
+      "command": "workbench.action.terminal.clear", // Commande pour effacer le terminal
+      "when": "terminalFocus" // Condition : le terminal doit avoir le focus
+    },
+    // Ouvre le fichier courant dans l'explorateur de l'OS
+    {
+      "key": "shift+ctrl+o",
+      "command": "revealFileInOS" // Commande pour révéler le fichier dans l'explorateur de fichiers de l'OS
+    },
+    // Navigation par symbole
+    {
+      "key": "ctrl+r",
+      "command": "workbench.action.gotoSymbol" // Commande pour accéder à un symbole dans le fichier
+    },
+    // Reformatte le document
+    {
+      "key": "alt+ctrl+l",
+      "command": "editor.action.formatDocument" // Commande pour formater le document
+    }
+  ]
+  
